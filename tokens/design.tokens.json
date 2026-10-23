@@ -1,0 +1,644 @@
+{
+  "$description": "Plus1 guest-list app design tokens (DTCG 2025.10). Primitives are shared; theme.dark and theme.light hold semantic colors that alias primitives. Dark is the default theme.",
+  "color": {
+    "$type": "color",
+    "white": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          1,
+          1
+        ],
+        "alpha": 1
+      }
+    },
+    "ink": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.067,
+          0.094,
+          0.153
+        ],
+        "alpha": 1
+      }
+    },
+    "brand": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.263,
+          0.22,
+          0.792
+        ],
+        "alpha": 1
+      }
+    },
+    "neutral": {
+      "50": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.969,
+            0.969,
+            0.984
+          ],
+          "alpha": 1
+        }
+      },
+      "100": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.933,
+            0.937,
+            0.961
+          ],
+          "alpha": 1
+        }
+      },
+      "200": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.851,
+            0.859,
+            0.906
+          ],
+          "alpha": 1
+        }
+      },
+      "300": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.639,
+            0.659,
+            0.765
+          ],
+          "alpha": 1
+        }
+      },
+      "500": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.42,
+            0.439,
+            0.565
+          ],
+          "alpha": 1
+        }
+      },
+      "600": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.294,
+            0.314,
+            0.408
+          ],
+          "alpha": 1
+        }
+      },
+      "700": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.18,
+            0.2,
+            0.314
+          ],
+          "alpha": 1
+        }
+      },
+      "800": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.118,
+            0.133,
+            0.208
+          ],
+          "alpha": 1
+        }
+      },
+      "850": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.082,
+            0.094,
+            0.149
+          ],
+          "alpha": 1
+        }
+      },
+      "950": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.043,
+            0.051,
+            0.078
+          ],
+          "alpha": 1
+        }
+      }
+    },
+    "indigo": {
+      "50": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.933,
+            0.941,
+            1
+          ],
+          "alpha": 1
+        }
+      },
+      "300": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.647,
+            0.627,
+            1
+          ],
+          "alpha": 1
+        }
+      },
+      "500": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.357,
+            0.314,
+            0.91
+          ],
+          "alpha": 1
+        }
+      }
+    },
+    "green": {
+      "50": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.925,
+            0.992,
+            0.961
+          ],
+          "alpha": 1
+        }
+      },
+      "400": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.204,
+            0.827,
+            0.6
+          ],
+          "alpha": 1
+        }
+      },
+      "700": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.016,
+            0.471,
+            0.341
+          ],
+          "alpha": 1
+        }
+      },
+      "950": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.059,
+            0.18,
+            0.141
+          ],
+          "alpha": 1
+        }
+      }
+    },
+    "amber": {
+      "50": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            0.984,
+            0.922
+          ],
+          "alpha": 1
+        }
+      },
+      "400": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.984,
+            0.749,
+            0.141
+          ],
+          "alpha": 1
+        }
+      },
+      "700": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.706,
+            0.325,
+            0.035
+          ],
+          "alpha": 1
+        }
+      },
+      "950": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.2,
+            0.153,
+            0.039
+          ],
+          "alpha": 1
+        }
+      }
+    },
+    "red": {
+      "50": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.996,
+            0.949,
+            0.949
+          ],
+          "alpha": 1
+        }
+      },
+      "400": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.973,
+            0.443,
+            0.443
+          ],
+          "alpha": 1
+        }
+      },
+      "700": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.725,
+            0.11,
+            0.11
+          ],
+          "alpha": 1
+        }
+      },
+      "950": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.227,
+            0.078,
+            0.086
+          ],
+          "alpha": 1
+        }
+      }
+    }
+  },
+  "space": {
+    "$type": "dimension",
+    "xs": {
+      "$value": {
+        "value": 4,
+        "unit": "px"
+      }
+    },
+    "small": {
+      "$value": {
+        "value": 8,
+        "unit": "px"
+      }
+    },
+    "medium": {
+      "$value": {
+        "value": 16,
+        "unit": "px"
+      }
+    },
+    "large": {
+      "$value": {
+        "value": 24,
+        "unit": "px"
+      }
+    },
+    "xl": {
+      "$value": {
+        "value": 32,
+        "unit": "px"
+      }
+    }
+  },
+  "radius": {
+    "$type": "dimension",
+    "control": {
+      "$value": {
+        "value": 12,
+        "unit": "px"
+      }
+    },
+    "card": {
+      "$value": {
+        "value": 16,
+        "unit": "px"
+      }
+    },
+    "pill": {
+      "$value": {
+        "value": 999,
+        "unit": "px"
+      }
+    }
+  },
+  "size": {
+    "$type": "dimension",
+    "touchTarget": {
+      "$value": {
+        "value": 48,
+        "unit": "px"
+      }
+    },
+    "contentMax": {
+      "$value": {
+        "value": 480,
+        "unit": "px"
+      }
+    }
+  },
+  "font": {
+    "body": {
+      "$type": "fontFamily",
+      "$value": [
+        "Lato",
+        "sans-serif"
+      ]
+    },
+    "bodySize": {
+      "$type": "dimension",
+      "$value": {
+        "value": 16,
+        "unit": "px"
+      }
+    },
+    "size": {
+      "$type": "dimension",
+      "display": {
+        "$value": {
+          "value": 28,
+          "unit": "px"
+        }
+      },
+      "title": {
+        "$value": {
+          "value": 22,
+          "unit": "px"
+        }
+      },
+      "heading": {
+        "$value": {
+          "value": 18,
+          "unit": "px"
+        }
+      },
+      "body": {
+        "$value": "{font.bodySize}"
+      },
+      "label": {
+        "$value": {
+          "value": 14,
+          "unit": "px"
+        }
+      },
+      "caption": {
+        "$value": {
+          "value": 13,
+          "unit": "px"
+        }
+      },
+      "overline": {
+        "$value": {
+          "value": 12,
+          "unit": "px"
+        }
+      },
+      "code": {
+        "$value": {
+          "value": 40,
+          "unit": "px"
+        }
+      }
+    },
+    "weight": {
+      "$type": "fontWeight",
+      "regular": {
+        "$value": 400
+      },
+      "medium": {
+        "$value": 500
+      },
+      "semibold": {
+        "$value": 600
+      },
+      "bold": {
+        "$value": 700
+      }
+    }
+  },
+  "theme": {
+    "dark": {
+      "$type": "color",
+      "bg": {
+        "canvas": {
+          "$value": "{color.neutral.950}"
+        },
+        "surface": {
+          "$value": "{color.neutral.850}"
+        },
+        "surfaceRaised": {
+          "$value": "{color.neutral.800}"
+        }
+      },
+      "border": {
+        "default": {
+          "$value": "{color.neutral.700}"
+        },
+        "strong": {
+          "$value": "{color.neutral.500}"
+        }
+      },
+      "text": {
+        "primary": {
+          "$value": "{color.neutral.50}"
+        },
+        "muted": {
+          "$value": "{color.neutral.300}"
+        },
+        "accent": {
+          "$value": "{color.indigo.300}"
+        }
+      },
+      "action": {
+        "bg": {
+          "$value": "{color.indigo.500}"
+        },
+        "on": {
+          "$value": "{color.white}"
+        },
+        "subtle": {
+          "$value": "{color.neutral.800}"
+        }
+      },
+      "focus": {
+        "ring": {
+          "$value": "{color.indigo.300}"
+        }
+      },
+      "disabled": {
+        "bg": {
+          "$value": "{color.neutral.800}"
+        },
+        "text": {
+          "$value": "{color.neutral.500}"
+        }
+      },
+      "status": {
+        "success": {
+          "$value": "{color.green.400}"
+        },
+        "successBg": {
+          "$value": "{color.green.950}"
+        },
+        "warning": {
+          "$value": "{color.amber.400}"
+        },
+        "warningBg": {
+          "$value": "{color.amber.950}"
+        },
+        "error": {
+          "$value": "{color.red.400}"
+        },
+        "errorBg": {
+          "$value": "{color.red.950}"
+        }
+      },
+      "qr": {
+        "bg": {
+          "$value": "{color.white}"
+        },
+        "fg": {
+          "$value": "{color.ink}"
+        }
+      }
+    },
+    "light": {
+      "$type": "color",
+      "bg": {
+        "canvas": {
+          "$value": "{color.neutral.50}"
+        },
+        "surface": {
+          "$value": "{color.white}"
+        },
+        "surfaceRaised": {
+          "$value": "{color.neutral.100}"
+        }
+      },
+      "border": {
+        "default": {
+          "$value": "{color.neutral.200}"
+        },
+        "strong": {
+          "$value": "{color.neutral.500}"
+        }
+      },
+      "text": {
+        "primary": {
+          "$value": "{color.ink}"
+        },
+        "muted": {
+          "$value": "{color.neutral.600}"
+        },
+        "accent": {
+          "$value": "{color.brand}"
+        }
+      },
+      "action": {
+        "bg": {
+          "$value": "{color.brand}"
+        },
+        "on": {
+          "$value": "{color.white}"
+        },
+        "subtle": {
+          "$value": "{color.indigo.50}"
+        }
+      },
+      "focus": {
+        "ring": {
+          "$value": "{color.brand}"
+        }
+      },
+      "disabled": {
+        "bg": {
+          "$value": "{color.neutral.100}"
+        },
+        "text": {
+          "$value": "{color.neutral.500}"
+        }
+      },
+      "status": {
+        "success": {
+          "$value": "{color.green.700}"
+        },
+        "successBg": {
+          "$value": "{color.green.50}"
+        },
+        "warning": {
+          "$value": "{color.amber.700}"
+        },
+        "warningBg": {
+          "$value": "{color.amber.50}"
+        },
+        "error": {
+          "$value": "{color.red.700}"
+        },
+        "errorBg": {
+          "$value": "{color.red.50}"
+        }
+      },
+      "qr": {
+        "bg": {
+          "$value": "{color.white}"
+        },
+        "fg": {
+          "$value": "{color.ink}"
+        }
+      }
+    }
+  }
+}
