@@ -8,8 +8,8 @@
   padding: 6px var(--space-medium);
   background: var(--color-status-warning-bg);
   color: var(--color-status-warning);
-  font-size: var(--font-size-caption);
-  line-height: 18px;
+  font-size: var(--font-size-xs);
+  line-height: var(--font-line-height-xs);
   border-bottom: 1px solid var(--color-status-warning);
 }
 

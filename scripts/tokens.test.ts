@@ -14,6 +14,18 @@ describe("design tokens", () => {
     expect(css).toContain('--font-body: "Lato", sans-serif;');
   });
 
+  it("follows the Tailwind CSS default type scale", () => {
+    const css = buildCss(source());
+    const scale: [string, number, number][] = [
+      ["xs", 12, 16], ["sm", 14, 20], ["base", 16, 24], ["lg", 18, 28], ["xl", 20, 28], ["2xl", 24, 32], ["3xl", 30, 36],
+      ["4xl", 36, 40], ["5xl", 48, 48], ["6xl", 60, 60], ["7xl", 72, 72], ["8xl", 96, 96], ["9xl", 128, 128],
+    ];
+    for (const [step, size, lineHeight] of scale) {
+      expect(css).toContain(`--font-size-${step}: ${size}px;`);
+      expect(css).toContain(`--font-line-height-${step}: ${lineHeight}px;`);
+    }
+  });
+
   it("fails the build on an unknown reference", () => {
     const doc = source();
     doc.theme.dark.bg.canvas.$value = "{color.neutral.999}";

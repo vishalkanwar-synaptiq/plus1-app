@@ -16,8 +16,8 @@ body {
   background: var(--color-bg-canvas);
   color: var(--color-text-primary);
   font-family: var(--font-lato), var(--font-body);
-  font-size: var(--font-size-body);
-  line-height: 1.5;
+  font-size: var(--font-size-base);
+  line-height: var(--font-line-height-base);
   -webkit-font-smoothing: antialiased;
 }
 
