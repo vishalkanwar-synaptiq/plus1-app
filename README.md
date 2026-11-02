@@ -52,7 +52,22 @@ Open http://localhost:3000. The links in the prototype bar switch between the gu
 
 - `color.*` are shared primitives.
 - `theme.dark.*` and `theme.light.*` are semantic colors that alias primitives. Dark is the default.
-- `space`, `radius`, `size` and `font` hold dimensions, the Lato font stack and weights.
+- `space`, `radius` and `size` hold dimensions.
+- `font` holds the Lato font stack, weights, letter spacing, and the Tailwind CSS default type scale (`font.size.xs` to `font.size.9xl`, each with a matching `font.lineHeight`).
+
+Text styles match the Figma file and map to the scale like this:
+
+| Tailwind step | Style | Used for |
+| --- | --- | --- |
+| `xs` 12/16 | Caption, Overline | Helper text, metadata, section labels |
+| `sm` 14/20 | Label, Reference | Field labels, chips, pass references |
+| `base` 16/24 | Body, Body strong | Body copy, inputs, buttons |
+| `lg` 18/28 | H6 Heading | App bar titles, card headings, hold countdown |
+| `xl` 20/28 | H5 Title | Screen titles, code-entry digits |
+| `3xl` 30/36 | H3 Display | Page heroes, big status titles |
+| `4xl` 36/40 | H2 Code | The door code on the staff screen |
+
+The other steps (`2xl`, `5xl` to `9xl`) exist as tokens for future headings and display text.
 
 `scripts/build-tokens.mjs` validates the file and writes `src/styles/tokens.css` (generated, not committed). The build fails on unknown or mistyped references, legacy `value` keys, invalid colors or dimensions, or themes that don't define the same tokens. Components use only the generated CSS variables.
 

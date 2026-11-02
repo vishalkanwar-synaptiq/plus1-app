@@ -407,48 +407,195 @@
     },
     "size": {
       "$type": "dimension",
-      "display": {
-        "$value": {
-          "value": 28,
-          "unit": "px"
-        }
-      },
-      "title": {
-        "$value": {
-          "value": 22,
-          "unit": "px"
-        }
-      },
-      "heading": {
-        "$value": {
-          "value": 18,
-          "unit": "px"
-        }
-      },
-      "body": {
-        "$value": "{font.bodySize}"
-      },
-      "label": {
-        "$value": {
-          "value": 14,
-          "unit": "px"
-        }
-      },
-      "caption": {
-        "$value": {
-          "value": 13,
-          "unit": "px"
-        }
-      },
-      "overline": {
+      "$description": "Tailwind CSS default type scale (text-xs to text-9xl).",
+      "xs": {
         "$value": {
           "value": 12,
           "unit": "px"
         }
       },
-      "code": {
+      "sm": {
+        "$value": {
+          "value": 14,
+          "unit": "px"
+        }
+      },
+      "base": {
+        "$value": "{font.bodySize}"
+      },
+      "lg": {
+        "$value": {
+          "value": 18,
+          "unit": "px"
+        }
+      },
+      "xl": {
+        "$value": {
+          "value": 20,
+          "unit": "px"
+        }
+      },
+      "2xl": {
+        "$value": {
+          "value": 24,
+          "unit": "px"
+        }
+      },
+      "3xl": {
+        "$value": {
+          "value": 30,
+          "unit": "px"
+        }
+      },
+      "4xl": {
+        "$value": {
+          "value": 36,
+          "unit": "px"
+        }
+      },
+      "5xl": {
+        "$value": {
+          "value": 48,
+          "unit": "px"
+        }
+      },
+      "6xl": {
+        "$value": {
+          "value": 60,
+          "unit": "px"
+        }
+      },
+      "7xl": {
+        "$value": {
+          "value": 72,
+          "unit": "px"
+        }
+      },
+      "8xl": {
+        "$value": {
+          "value": 96,
+          "unit": "px"
+        }
+      },
+      "9xl": {
+        "$value": {
+          "value": 128,
+          "unit": "px"
+        }
+      }
+    },
+    "lineHeight": {
+      "$type": "dimension",
+      "$description": "Line heights paired with each Tailwind type-scale step.",
+      "xs": {
+        "$value": {
+          "value": 16,
+          "unit": "px"
+        }
+      },
+      "sm": {
+        "$value": {
+          "value": 20,
+          "unit": "px"
+        }
+      },
+      "base": {
+        "$value": {
+          "value": 24,
+          "unit": "px"
+        }
+      },
+      "lg": {
+        "$value": {
+          "value": 28,
+          "unit": "px"
+        }
+      },
+      "xl": {
+        "$value": {
+          "value": 28,
+          "unit": "px"
+        }
+      },
+      "2xl": {
+        "$value": {
+          "value": 32,
+          "unit": "px"
+        }
+      },
+      "3xl": {
+        "$value": {
+          "value": 36,
+          "unit": "px"
+        }
+      },
+      "4xl": {
         "$value": {
           "value": 40,
+          "unit": "px"
+        }
+      },
+      "5xl": {
+        "$value": {
+          "value": 48,
+          "unit": "px"
+        }
+      },
+      "6xl": {
+        "$value": {
+          "value": 60,
+          "unit": "px"
+        }
+      },
+      "7xl": {
+        "$value": {
+          "value": 72,
+          "unit": "px"
+        }
+      },
+      "8xl": {
+        "$value": {
+          "value": 96,
+          "unit": "px"
+        }
+      },
+      "9xl": {
+        "$value": {
+          "value": 128,
+          "unit": "px"
+        }
+      }
+    },
+    "tracking": {
+      "$type": "dimension",
+      "$description": "Letter spacing used by the text styles.",
+      "overline": {
+        "$value": {
+          "value": 0.8,
+          "unit": "px"
+        }
+      },
+      "reference": {
+        "$value": {
+          "value": 0.5,
+          "unit": "px"
+        }
+      },
+      "h5": {
+        "$value": {
+          "value": -0.2,
+          "unit": "px"
+        }
+      },
+      "h3": {
+        "$value": {
+          "value": -0.75,
+          "unit": "px"
+        }
+      },
+      "code": {
+        "$value": {
+          "value": 4,
           "unit": "px"
         }
       }

@@ -48,60 +48,60 @@
 
 /* ---------- Type ---------- */
 .display {
-  font-size: var(--font-size-display);
-  line-height: 34px;
+  font-size: var(--font-size-3xl);
+  line-height: var(--font-line-height-3xl);
   font-weight: var(--font-weight-bold);
-  letter-spacing: -0.5px;
+  letter-spacing: var(--font-tracking-h3);
 }
 
 .title {
-  font-size: var(--font-size-title);
-  line-height: 28px;
+  font-size: var(--font-size-xl);
+  line-height: var(--font-line-height-xl);
   font-weight: var(--font-weight-bold);
-  letter-spacing: -0.3px;
+  letter-spacing: var(--font-tracking-h5);
 }
 
 .heading {
-  font-size: var(--font-size-heading);
-  line-height: 24px;
+  font-size: var(--font-size-lg);
+  line-height: var(--font-line-height-lg);
   font-weight: var(--font-weight-bold);
 }
 
 .body {
-  font-size: var(--font-size-body);
-  line-height: 24px;
+  font-size: var(--font-size-base);
+  line-height: var(--font-line-height-base);
 }
 
 .bodyStrong {
-  font-size: var(--font-size-body);
-  line-height: 24px;
+  font-size: var(--font-size-base);
+  line-height: var(--font-line-height-base);
   font-weight: var(--font-weight-bold);
 }
 
 .label {
-  font-size: var(--font-size-label);
-  line-height: 20px;
+  font-size: var(--font-size-sm);
+  line-height: var(--font-line-height-sm);
   font-weight: var(--font-weight-medium);
 }
 
 .caption {
-  font-size: var(--font-size-caption);
-  line-height: 18px;
+  font-size: var(--font-size-xs);
+  line-height: var(--font-line-height-xs);
 }
 
 .overline {
-  font-size: var(--font-size-overline);
-  line-height: 16px;
+  font-size: var(--font-size-xs);
+  line-height: var(--font-line-height-xs);
   font-weight: var(--font-weight-bold);
-  letter-spacing: 0.8px;
+  letter-spacing: var(--font-tracking-overline);
   text-transform: uppercase;
 }
 
 .reference {
-  font-size: var(--font-size-label);
-  line-height: 20px;
+  font-size: var(--font-size-sm);
+  line-height: var(--font-line-height-sm);
   font-weight: var(--font-weight-semibold);
-  letter-spacing: 0.5px;
+  letter-spacing: var(--font-tracking-reference);
   font-variant-numeric: tabular-nums;
 }
 
@@ -135,8 +135,8 @@
 }
 
 .appBar h1 {
-  font-size: var(--font-size-heading);
-  line-height: 24px;
+  font-size: var(--font-size-lg);
+  line-height: var(--font-line-height-lg);
   font-weight: var(--font-weight-bold);
   flex: 1;
   overflow: hidden;
@@ -167,9 +167,9 @@
   padding: 0 var(--space-large);
   border-radius: var(--radius-control);
   border: 1.5px solid transparent;
-  font-size: var(--font-size-body);
+  font-size: var(--font-size-base);
   font-weight: var(--font-weight-bold);
-  line-height: 24px;
+  line-height: var(--font-line-height-base);
   text-decoration: none;
   text-align: center;
   cursor: pointer;
@@ -218,8 +218,8 @@
   gap: 6px;
   padding: 4px 12px 4px 10px;
   border-radius: var(--radius-pill);
-  font-size: var(--font-size-label);
-  line-height: 20px;
+  font-size: var(--font-size-sm);
+  line-height: var(--font-line-height-sm);
   font-weight: var(--font-weight-medium);
   white-space: nowrap;
 }
@@ -319,8 +319,8 @@
   display: flex;
   justify-content: space-between;
   gap: 12px;
-  font-size: var(--font-size-label);
-  line-height: 20px;
+  font-size: var(--font-size-sm);
+  line-height: var(--font-line-height-sm);
   font-weight: var(--font-weight-medium);
 }
 
@@ -341,8 +341,8 @@
 }
 
 .field > label {
-  font-size: var(--font-size-label);
-  line-height: 20px;
+  font-size: var(--font-size-sm);
+  line-height: var(--font-line-height-sm);
   font-weight: var(--font-weight-medium);
 }
 
@@ -354,7 +354,7 @@
   border: 1px solid var(--color-border-strong);
   background: var(--color-bg-surface);
   color: var(--color-text-primary);
-  font-size: var(--font-size-body);
+  font-size: var(--font-size-base);
 }
 
 .input::placeholder {
@@ -376,8 +376,8 @@
   display: flex;
   gap: 6px;
   align-items: flex-start;
-  font-size: var(--font-size-caption);
-  line-height: 18px;
+  font-size: var(--font-size-xs);
+  line-height: var(--font-line-height-xs);
   color: var(--color-text-muted);
 }
 
@@ -407,7 +407,7 @@
   border: 0;
   background: none;
   outline: none;
-  font-size: var(--font-size-body);
+  font-size: var(--font-size-base);
   min-height: 48px;
 }
 
@@ -423,7 +423,7 @@
   border-radius: var(--radius-pill);
   border: 1px solid var(--color-border-strong);
   background: var(--color-bg-surface);
-  font-size: var(--font-size-label);
+  font-size: var(--font-size-sm);
   font-weight: var(--font-weight-medium);
   cursor: pointer;
 }
@@ -456,8 +456,8 @@
   min-height: var(--size-touch-target);
   padding: 12px 0;
   cursor: pointer;
-  font-size: var(--font-size-body);
-  line-height: 24px;
+  font-size: var(--font-size-base);
+  line-height: var(--font-line-height-base);
 }
 
 .checkRow input {
@@ -550,7 +550,7 @@
 }
 
 .holdTime {
-  font-size: var(--font-size-heading);
+  font-size: var(--font-size-lg);
   font-weight: var(--font-weight-bold);
   font-variant-numeric: tabular-nums;
 }
@@ -573,7 +573,7 @@
   border-radius: var(--radius-control);
   border: 1px solid var(--color-border-strong);
   background: var(--color-bg-surface);
-  font-size: var(--font-size-title);
+  font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
 }
 
@@ -591,10 +591,10 @@
 }
 
 .bigCode {
-  font-size: var(--font-size-code);
-  line-height: 48px;
+  font-size: var(--font-size-4xl);
+  line-height: var(--font-line-height-4xl);
   font-weight: var(--font-weight-bold);
-  letter-spacing: 4px;
+  letter-spacing: var(--font-tracking-code);
   font-variant-numeric: tabular-nums;
 }
 
@@ -634,8 +634,8 @@
   display: flex;
   align-items: center;
   gap: var(--space-small);
-  font-size: var(--font-size-label);
-  line-height: 20px;
+  font-size: var(--font-size-sm);
+  line-height: var(--font-line-height-sm);
   font-weight: var(--font-weight-medium);
   color: var(--color-text-muted);
 }
@@ -792,7 +792,7 @@
   place-items: center;
   background: var(--color-action-subtle);
   color: var(--color-text-accent);
-  font-size: var(--font-size-label);
+  font-size: var(--font-size-sm);
   font-weight: var(--font-weight-medium);
 }
 
@@ -823,7 +823,7 @@
   background: var(--color-bg-surface-raised);
   color: var(--color-text-primary);
   text-decoration: none;
-  font-size: var(--font-size-label);
+  font-size: var(--font-size-sm);
   font-weight: var(--font-weight-medium);
 }
 
