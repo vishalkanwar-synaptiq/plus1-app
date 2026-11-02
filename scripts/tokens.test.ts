@@ -7,8 +7,8 @@ const source = () => JSON.parse(readFileSync(new URL("../tokens/design.tokens.js
 describe("design tokens", () => {
   it("builds CSS for both themes, with dark as the default", () => {
     const css = buildCss(source());
-    expect(css).toContain(':root, [data-theme="dark"] {');
-    expect(css).toContain('[data-theme="light"] {');
+    expect(css).toContain(':root, [data-appearance="dark"] {');
+    expect(css).toContain('[data-appearance="light"] {');
     expect(css).toContain("--color-bg-canvas: var(--primitive-color-neutral-950);");
     expect(css).toContain("--size-touch-target: 48px;");
     expect(css).toContain('--font-body: "Lato", sans-serif;');

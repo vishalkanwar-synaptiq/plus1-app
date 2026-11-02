@@ -1,3 +1,7 @@
+// The ux-builder theme and widget styles, once and before the app's own CSS.
+import "@ux-builder/tokens/themes/img-8593-databricks.css";
+import "@ux-builder/tokens/fonts/img-8593-databricks.css";
+import "@ux-builder/ui/ui.css";
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import { PrototypeBar } from "@/components/PrototypeBar";
@@ -26,12 +30,13 @@ export const viewport: Viewport = {
   themeColor: "#0b0d14",
 };
 
-// Applies a saved theme before first paint. Dark is the default when nothing is saved.
-const themeScript = `try{var t=localStorage.getItem("plus1.theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}`;
+// data-theme picks the ux-builder theme; data-appearance picks light or dark for it and for the app's own tokens.
+// Applies a saved appearance before first paint. Dark is the default when nothing is saved.
+const themeScript = `try{var t=localStorage.getItem("plus1.theme");if(t==="light"||t==="dark")document.documentElement.dataset.appearance=t}catch(e){}`;
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" data-theme="dark" className={lato.variable} suppressHydrationWarning>
+    <html lang="en" data-theme="img-8593-databricks" data-appearance="dark" className={lato.variable} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>

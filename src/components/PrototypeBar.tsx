@@ -8,11 +8,11 @@ type Theme = "dark" | "light";
 
 function subscribe(listener: () => void) {
   const observer = new MutationObserver(listener);
-  observer.observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+  observer.observe(document.documentElement, { attributes: true, attributeFilter: ["data-appearance"] });
   return () => observer.disconnect();
 }
 
-const currentTheme = (): Theme => (document.documentElement.dataset.theme === "light" ? "light" : "dark");
+const currentTheme = (): Theme => (document.documentElement.dataset.appearance === "light" ? "light" : "dark");
 
 /** Labels every screen as a prototype and lets the viewer switch theme (dark is the default). */
 export function PrototypeBar() {
@@ -20,7 +20,7 @@ export function PrototypeBar() {
 
   const toggle = () => {
     const next: Theme = theme === "dark" ? "light" : "dark";
-    document.documentElement.dataset.theme = next;
+    document.documentElement.dataset.appearance = next;
     try {
       localStorage.setItem("plus1.theme", next);
     } catch {
